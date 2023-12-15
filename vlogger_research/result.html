@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vlogger research</title>
-<style>
-table td {
-  border: 1px #ccc solid;
-  text-align:center;
-}
-</style>
+<div align=justify id=little>
+<center><span style="font-size:16px;">Друзья!</span></center>
+<div style="background-color:#fff; text-align:left; font-size:14px;">
+Самый быстрый способ научиться различать знаки зодиака - непосредственное наблюдение за их деятельностью.
+Используя всю мощь сообщества любителей астрологии на сайте запущен проект по исследованию видеоблоггеров.
+<br><br>Если вы смотрите YouTube канал или Twitch стрим популярного видеоблоггера и дата его рождения общеизвестна - <a href="lnk05.html?rdr=https://gitlab.com/astroresearch/vlogger_research/-/wikis/home" target="blank">сообщите эту информацию.</a>
+<br><br>Полученные данные будут собираться на <a href="lnk06.html?rdr=https://gitlab.com/astroresearch/vlogger_research/-/wikis/home" target="blank">спец. сайте</a>.
 
-</head>
-<body>
+<br><br>
+Фазы исследования:
+<br>
+<br>1. Сбор статистики
+<br>2. Корректировка и анализ
+<br>3. Выводы
+<br><br>
 
+<div style="font-size:14px;padding:5px;">
 <strong>Ход исследования:</strong>
 <ol type="1">
     <li> Сбор данных (собрано 600 влоггеров с подписчиками более 1 млн.).</li>
@@ -28,24 +29,17 @@ table td {
 В ходе сбора статистики выяснилось, что влоггеров миллионников огромное множество, в выборку попала лишь малая часть: США, Россия, Венесуэла, Испания, Великобритания.
 По каждому знаку было добавлено по 50 влоггеров имеющих более 1 млн. подписчиков.
 </p>
-<br><center><img src="img/zodiac.png"></center>
+<br><center><img src="cache/img/vlg_600/zodiac.png"></center>
+<br><center><img src="cache/img/vlg_600/elements.png"></center>
 <br><strong>2-4. Подсчет аспектов / генерация случайных дат рождений</strong>
-<p>здесь таблица</p>
-<br><strong>5. Поиск отклонений</strong>
-<p>
-Использовались следующие методы:
-<ul>
-<li>Отклонение от среднего значения</li>
-<li>Расчет вероятности</li>
-</ul>
-</p>
-<br><strong>Отклонение от среднего значения</strong>
-<p>
-<table cellspacing=0 cellpadding=0>
+<p><a href="https://astro-online.ru/articles/table_vlg_1251.html" target="blank">таблица</a></p>
+<br>
+<div style="overflow-x:auto;">
+<table cellspacing=0 cellpadding=0 style="font-size:10px;">
     <tr><td>Аспект</td><td>Значение</td><td>Шум1</td><td>Шум2</td><td>Шум3</td><td>Шум4</td><td>Шум5</td><td>Шум6</td><td>Шум7</td><td>Шум8</td><td>Шум макс.</td><td>Шум мин.</td><td>Шум средн.</td><td>Сигнал</td></tr>
     <tr><td align=left>Квадратура Марс-Плутон</td><td align=right>83</td><td align=right style="color:gray">57</td><td align=right style="color:gray">56</td><td align=right style="color:gray">57</td><td align=right style="color:gray">59</td><td align=right style="color:gray">62</td><td align=right style="color:gray">58</td><td align=right style="color:gray">59</td><td align=right style="color:gray">73</td><td align=right>73</td><td align=right>56</td><td align=right>60</td><td align=right style="color:red">10</td></tr>
-  </table>
-</p>
+ </table>
+</div>
 <br>Комментарий к таблице:
 <ul>
 <li>Значение - количество аспектов в датах рождения влоггеров</li>
@@ -55,29 +49,31 @@ table td {
 <li>Шум средн. - среднее арифметическое (Шум1-Шум8)</li>
 <li>Сигнал - разница между колонкой Значение и колонкой Шум макс. (если Значение превышает максимальное) или Шум мин. (Значение меньше минимального)</li>
 </ul>
-<br><strong>Расчет вероятности</strong>
+<br><strong>5. Поиск отклонений (расчет вероятности)</strong>
 <br>
 <br>Расчет вероятности осуществляется стандартными методами для нормального распределения.
  <br><br>Для нашего примера из таблицы:
  <br><br>имеем величины: 57,56,57,59,62,58,59,73
- <br> вычисляем среднее значение:
- <br><center><img src="img/raschet_avg_mars_pluton.png" width=300></center>
+ <br> вычисляем среднее значение (мат. ожидание):
+ <br><center><img src="cache/img/vlg_600/raschet_avg_mars_pluton.png" width=300></center>
  <br> вычисляем среднее арифметическое квадратов отклонений (дисперсию):
- <center><img src="img/raschet_disp_mars_pluton.png"></center>
+ <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-1.png"></center>
+ <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-2.png"></center>
+ <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-3.png"></center>
 <br> берем корень и получаем стандартное отклонение (сигма):
-<center><img src="img/raschet_sred_mars_pluton.png" width=150></center>
-<br> теперь мы можем посчитать вероятность получения указанного количества аспектов в выборке влоггеров по формуле:
-<center><img src="img/gauss_formula_rashet_veroyatnosti.png" width=300></center>
+<center><img src="cache/img/vlg_600/raschet_sred_mars_pluton.png" width=150></center>
+<br> теперь мы можем посчитать вероятность получения указанного количества аспектов по формуле Лапласа:
+<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti.png" width=300 ></center>
 <br>Например, какая вероятность, что искомое значение (сумма аспектов  "Квадратура Марс-Плутон (угловое расстояние между Марсом и Плутоном 90 градусов)" в датах рождения 600 влоггеров) будет находиться в диапазоне от 82 до 84?
 <br><br>Подставляем в формулу значения: x1=82, x2=84, &sigma;=5, &alpha;=60, получаем:
-<center><img src="img/gauss_formula_rashet_veroyatnosti_solution.png"></center>
-<center><img src="img/gauss_formula_rashet_veroyatnosti_solution1.png"></center>
-(значение Ф(4.8) округляем до Ф(5.0), значение Ф(4.4) округляем до Ф(4.0), далее по <a href="https://ya.ru/search/?text=таблица+значений+интегральной+функции+лапласа" target="blank">таблице значений интегральной функции Лапласа</a> ищем искомые величины).
+<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti_solution.png"></center>
+<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti_solution1.png"></center>
+(значение Ф(4.8) округляем до Ф(5.0), значение Ф(4.4) округляем до Ф(4.0), далее по <a href="https://astro-online.ru/lnk016.html?r=https://ya.ru/search/?text=таблица+значений+интегральной+функции+лапласа" target="blank">таблице значений интегральной функции Лапласа</a> ищем искомые величины).
 <br><br>Итоговая вероятность получилась равной 0,000029 или 1 / 34482 !
 <br><br>
 Процесс вычисления вероятности можно автоматизировать с помощью простейшей программы на языке Python:
 <div style="padding:10px; background-color:#f8f8f8;">
-<pre>
+<pre style="white-space: pre-wrap;">
 <font color='#A40000'># Подключаем библиотеку SciPy</font>
 from scipy import stats
 <font color='#A40000'># Задаем параметры: loc=60 - среднее значение,  scale=5 - стандартное отклонение (сигма)</font>
@@ -87,30 +83,43 @@ print(calc.pdf(83))
 </pre>
 </div>
 
-
-
-
-<br>Для более равномерного распределения случайных дат рождений использовался подсчет количества аспектов "Квадратура Марс-Плутон (угловое расстояние между Марсом и Плутоном 90 градусов)" не в 8 случайных выборках по 600 дат, а в 1000:
-<center><img src="img/gauss_square_mars_pluton.png"></center>
-<center><i>(на графике нормальное распределение (колоколообразная кривая с пиком в центре, распределение Гаусса-Лапласа) сумм аспектов в 1000 выборок по 600 случайных дат рождений, красная пунктирная линия - количество аспектов "Квадратура Марс-Плутон (угловое расстояние между Марсом и Плутоном 90 градусов)" в датах рождения 600 исследуемых влоггеров.)</i></center>
+<br>Для более равномерного распределения случайных дат рождений использовался подсчет количества аспектов "Квадратура Марс-Плутон" не в 8 случайных выборках по 600 дат, а в 1000:
+<center><img src="cache/img/vlg_600/gauss_square_mars_pluton.png" width=350 class="current_img"></center>
+<center><i>(на графике - нормальное распределение (колоколообразная кривая с пиком в центре, распределение Гаусса-Лапласа) сумм аспектов "Квадратура Марс-Плутон" в 1000 выборках по 600 случайных дат рождений, красная пунктирная линия - количество аспектов "Квадратура Марс-Плутон" в датах рождения 600 исследуемых влоггеров.)</i></center>
 <br>Что показывает этот график?
- <br>На графике отображено насколько маловероятно получить значение 83 случайно генерируя даты рождений. (число лежит практически за пределами графика - более 4-х стандартных отклонений (сигм)).
-<br><br>Для примера как выглядит величина, которая не маловероятна -"Тригон Меркурий-Марс" (угловое расстояние между Меркурием и Марсом 120 градусов):
- <br><center><img src="img/gauss_triangle_mercury_mars.png"></center>
+ <br>На графике отображено насколько маловероятно получить значение 83, случайно генерируя даты рождений (число лежит практически за пределами графика - более 4-х стандартных отклонений (сигм)).
+<br>
+<br>Небольшое отступление: что такое нормальное распределение?
+<br><i>Представьте, что вы бросаете два игральных кубика, каждый с шестью пронумерованными сторонами от 1 до 6.
+<br>Результаты экспериментов записываете в таблицу; допустим, вы делаете 100 бросков.
+<br>У вас получаются записи с номером эксперимента и результатом:
+<br>1 - 3
+<br>2 - 7
+<br>3 - 5
+<br>4 - 7
+<br>5 - 10
+<br>...
+<br>100 - 5
+<br>Далее вы группируете выпавшие значения; какие-то значения будут выпадать чаще, какие-то реже.
+<br>Если отобразить эти значения на графике, то вы увидите колоколообразный график - нормальное распределение.
+</i>
+
+<br><br>Для примера, как выглядит величина, которая не маловероятна -"Тригон Меркурий-Марс" (угловое расстояние между Меркурием и Марсом 120 градусов):
+ <br><center><img src="cache/img/vlg_600/gauss_triangle_mercury_mars.png" width=350 class="current_img"></center>
  <br><center>Вероятность 0.06 или 1 / 15</center>
  <br>Можно подумать, что это из за того, что Меркурий -быстрая планета и это влияет на частоту выпадания аспекта, но  взглянем на аспект "Секстиль Меркурий-Венера" (угловое расстояние между Меркурием и Венерой 60 градусов):
-  <br><center><img src="img/gauss_sextile_mercury_venus.png"></center>
+  <br><center><img src="cache/img/vlg_600/gauss_sextile_mercury_venus.png" width=350 class="current_img"></center>
  <br><center>(Вероятность 0.00248 или 1 / 402)</center>
  <br>
  <br><strong>Варианты обьяснения полученных аномалий:</strong>
 <br><br><center>Возраст влоггеров миллионников:</center>
-<br><center><img src="img/age.png"></center>
+<br><center><img src="cache/img/vlg_600/age.png" width=350 class="current_img"></center>
 <p>
 Разберем более подробней на примере аспекта "Квадратура Марс-Плутон", за счет чего произошло отклонение.
 <br>83 человека из 600  имеют указаный аспект:
-<center><img src="img/births_mars_pluton.png"></center>
+<center><img src="cache/img/vlg_600/births_mars_pluton.png" width=350 class="current_img"></center>
 <br>Из них 39 человек (1994-1996) родились в период 1994-2000, когда данный аспект встречался в 2-3 раза чаще чем обычно (52-82 дня в году, вместо 22-30 в другие годы):
-<center><img src="img/days_in_year_mars_pluton.png"></center>
+<center><img src="cache/img/vlg_600/days_in_year_mars_pluton.png" width=350 class="current_img"></center>
  Это привело к тому, что данный аспект встречается у влоггеров из выборки аномально часто (случайная генерация дат рождений не дала схожей картины).
  <br><br><b>Астрологическое обьяснение:</b>
  <br><br>Влоггеры часто рождались в период времени, когда наблюдалась квадратура Марса к Плутону (во внимание не берется ни в каких знаках находились указанные планеты, ни возможное влияние целого комплекса аспектов или других астрологических критериев).
@@ -136,7 +145,7 @@ print(calc.pdf(83))
 <br>Квадратура Венера-Марс - Min
 <br>Соединение Меркурий-Нептун - Max
 <br>
-<br><b>вероятность менее 1/1000 но более 1/200:</b>
+<br><b>вероятность от 1/200 до 1/1000:</b>
 <br><br>Секстиль Меркурий-Марс - Max
 <br>Секстиль Солнце-Сатурн - Max
 <br>Оппозиция Солнце-Юпитер - Max
@@ -149,7 +158,9 @@ print(calc.pdf(83))
 
 <br><br>
 
-Благодарю всех, кто принял участие в эксперименте и  присылал ссылки на каналы влоггеров.
- <br><br><br>
-</body>
-</html>
+Благодарю всех, кто принял участие в эксперименте и  присылал ссылки на каналы влоггеров!
+<br>
+<br>update: 11.12.2023
+</div>
+<br><br><br>
+<br><br><br>
