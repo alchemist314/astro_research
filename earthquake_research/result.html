@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Page</title>
+</head>
+<body>
+<div align=justify id=little>
+
+<h3> Исследование землетресений методами астрологии</h3>
+<p> Основные плюсы исследования землетресений:</p>
+<ul>
+<li> Известны точные дата/место/время событий </li>
+<li> Огромный массив накопленной информации в свободном доступе, например, здесь:<br><a href="https://earthquake.usgs.gov/earthquakes/search/" target="blank"> https://earthquake.usgs.gov/earthquakes/search/</a></li>
+<li> Возможность независимой проверки полученных результатов </li>
+</ul>
+  <p><b>Цель исследования:</b>
+  <br>- Поиск закономерностей между положением планет и возникающими землетресениями
+  <br>- Возможность прогнозирования землетресений с помощью астрологии
+  </p>
+  <p><b>Методы исследования:</b>
+<br>- Расчет отклонения от среднего
+<br>- Расчет вероятности события
+
+<p>
+  <strong>Ход исследования:</strong>
+</p>
+  <ol type="1">
+      <li> 0-20% Сбор данных.</li>
+      <li> 20-40% Расчет положений планет в знаках Зодиака и поиск отклонений.</li>
+      <li><font color=gray>40-60% Подсчет всех возможных аспектов (угловых растояний между планетами) и поиск отклонений.</font></li>
+      <li> <font color=gray>60-80% Расчет фаз Луны и поиск отклонений.</font></li>
+      <li> <font color=gray>80-100% Расчет положений астрологических домов и поиск отклонений.</font></li>
+      </ol>
+  </p>
+
+  <div style="padding-top:5px;justify-content:left;display:flex;">
+      <table style="font-size:12px;">
+  	<tr>
+  	    <td align="center">
+  		Текущий прогресс:
+  	    </td>
+  	</tr>
+  	<tr>
+  	    <td>
+  		<div style="width: 300px;">
+  		    <div style="width: 100%;background-color: #e0e0e0;padding: 3px;border-radius: 3px;box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);" />
+      			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 30%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">30%</span>
+  		    </div>
+  		</div>
+  	    </td>
+  	</tr>
+      </table>
+  </div>
+
+
+
+  <br><strong>1. Сбор данных</strong>
+  <p>
+    Были использованы данные по землетресениям с 1973 по 2023 год:
+</p>
+<table border=1>
+<tr align='center'><td>Магнитуда</td><td>кол-во<br>земле<br>тресений</td></tr>
+<tr><td>5</td><td>18368</td></tr>
+<tr><td>5.1</td><td>14519</td></tr>
+<tr><td>5.2</td><td>11613</td></tr>
+<tr><td>5.3</td><td>8760</td></tr>
+<tr><td>5.4</td><td>7012</td></tr>
+<tr><td>5.5</td><td>5310</td></tr>
+<tr><td>5.6</td><td>4126</td></tr>
+<tr><td>5.7</td><td>3151</td></tr>
+<tr><td>5.8</td><td>2339</td></tr>
+<tr><td>5.9</td><td>1980</td></tr>
+<tr><td>6</td><td>1643</td></tr>
+<tr><td>6.1</td><td>1202</td></tr>
+<tr><td>6.2</td><td>865</td></tr>
+<tr><td>6.3</td><td>755</td></tr>
+<tr><td>6.4</td><td>569</td></tr>
+<tr><td>6.5</td><td>442</td></tr>
+<tr><td>6.6</td><td>351</td></tr>
+<tr><td>6.7</td><td>294</td></tr>
+<tr><td>6.8</td><td>225</td></tr>
+<tr><td>6.9</td><td>198</td></tr>
+<tr><td>7</td><td>152</td></tr>
+</table>
+<!--
+  <p><b>Фазы исследования:</b>
+    <br>1. Положение планет в знаках Зодиака (сбор и анализ статистики) <---текущее исследование.
+    <br><font color='gray'>2. Подсчет аспектов (угловые расстояния между планетами)</font>
+    <br><font color='gray'>3. Влияние фаз Луны</font>
+    <br><font color='gray'>4. Астрологические дома</font>
+</p>
+!-->
+<h3>2. Положение планет в знаках Зодиака</h3>
+Для примера рассмотрим положение Солнца в знаках Зодиака при магнитуде в 6.6 баллов по шкале Рихтера (<i>шкала Рихтера - величина, характеризующая энергию, которая выделяется при землетрясении в виде сейсмических волн</i>).
+<p>Исходные данные (кол-во землетресений):
+</p>
+<table border=1>
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+<tr>
+  <td>6.6</td>
+  <td>29</td>
+  <td>26</td>
+  <td>26</td>
+  <td>33</td>
+  <td>31</td>
+  <td>28</td>
+  <td>26</td>
+  <td>41</td>
+  <td>32</td>
+  <td>32</td>
+  <td>20</td>
+  <td>27</td>
+</tr>
+</table>
+<br>
+<strong>Поиск отклонений</strong>
+<br>
+<p>
+Будем пользоваться двумя методами для поиска отклонений:
+<br>- Отклонение от среднего
+<br>- Расчет вероятности через функцию Лапласа
+</p>
+<strong>Отклонение от среднего</strong>
+<br>
+<br>Данный метод позволяет быстро оценить насколько величина отклоняется от среднего значения.
+<br>Расчитаем среднее арифметическое: (29+26+26+33+31+28+26+41+32+32+20+27)/12=29,25
+<br>По формуле найдем на сколько процентов происходит отклонение:
+<br>x=((v*100)/a)-100, где v - количество землетресений, a - среднее арифметическое:
+<br><br>
+<br><img src="img/sun_in_sign/6_6_full.png">
+<br>(<i>на графике 351 землетресение, происходившее с 1973 по 2023 год и имевшее мощность 6.6 баллов. Черная горизонтальная линия - среднее значение, пунктирной линией отмечено отклонение от среднего значения >=10%</i>)
+<br><br>
+<table border=1>
+  <tr align="center">
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+<tr>
+  <td>6.6</td>
+  <td>-0.9%</td>
+  <td>-11.1%</td>
+  <td>-11.1%</td>
+  <td>12.8%</td>
+  <td>6.0%</td>
+  <td>-4.3%</td>
+  <td>-11.1%</td>
+  <td>40.2%</td>
+  <td>9.4%</td>
+  <td>9.4%</td>
+  <td>-31.6%</td>
+  <td>-7.7%</td>
+</tr>
+</table>
+<br>
+Из таблицы становится понятно, что наибольшее отклонение происходит при попадании Солнца в знак Скорпион.
+<br>Расчитаем для этого критерия (Солнце в Скорпионе) вероятность события через функцию Лапласа.
+<br>
+<br><strong>Расчет вероятности через функцию Лапласа</strong>
+<br>(подробное описание методики расчета можно найти в <a href=#>исследовании Youtube влоггеров</a>)
+<p>
+Итак, для более равномерного распределения сгенерируем 1000 случайных выборок по 351 дате в диапазоне 1973-2023 год (в каждом году столько дат, сколько было землетресений магнитудой 6.6 баллов в указанный год):</li>
+</p>
+<img src="img/probability/sun_in_sco.png">
+<br><i>(на графике - нормальное распределение - колоколообразная кривая с пиком в центре, распределение Гаусса-Лапласа; Солнце в Скорпионе в 1000 выборках по 351 случайной дате, красная пунктирная линия - количество попаданий Солнца в знак Скорпион в нашем случае)</i>
+<p>
+Что показывает этот график?
+<br>На графике отображено насколько маловероятно получить 41 попадание (из 351 возможных) Солнца в знак Скорпион случайно генерируя даты.
+</p>
+
+Таблица вероятностей:
+<br>
+<table border=1>
+
+  <tr align="center">
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+<tr>
+  <td>6.6</td>
+  <td>1/12</td>
+  <td>1/15</td>
+  <td>1/15</td>
+  <td>1/17</td>
+  <td>1/13</td>
+  <td>1/13</td>
+  <td>1/15</td>
+  <td><font color='orangered'>1/184</font></td>
+  <td>1/15</td>
+  <td>1/15</td>
+  <td>1/62</td>
+  <td>1/14</td>
+</tr>
+</table>
+<br>
+Далее нас будут интересовать какие-либо существенные отклонения превышающие или равные 10%.
+<p>Посчитаем отклонения во всех категориях магнитуд от 5 до 7 баллов; у нас получится таблица, в которой значком '+' отмечены подходящие условию критерии:
+</p>
+<table border=1>
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+
+<tr align='center'><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>5.2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>5.7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.8</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.9</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.1</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.2</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6.3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.5</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.7</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6.8</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.9</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>итого</td>
+<td>3</td><td>4</td><td>2</td><td>3</td><td>4</td><td>2</td><td>4</td><td>6</td><td>3</td><td>1</td><td>0</td><td>6</td></tr>
+</table>
+<br>
+Отобразим итоговые значения на графике:
+<br><img src="img/earthquake_count.png">
+<!--
+<br><i>В таблице указаны округленные значения отклонения количества землетресений от среднего</i>
+!-->
+<h3>Предварительные итоги:</h3>
+<p>
+- Лидеры по количеству землетресений - Скорпион и Рыбы (представители водной стихии).
+<br>- Лидеры по минимальному количеству землетресений - Водолей (0 категорий) и Козерог (1 категория с магнитудой 5.7 баллов).
+<br>- Водолей - cамый "миролюбивый" знак (не удалось обнаружить какое-либо значимое отклонение)
+</p>
+<!--
+<br><i>(на графике представлена зависимость количества категорий (магнитуд), в которых происходит отклоненее выше 10% от среднего значения, при положении Солнца в знаке Зодиака. Например, в знаке Скорпион происходит 6 отклонений на 10% от среднего значения, при магнитудах: 6.1, 6.5, 6.6, 6.7, 6.8, 6.9 баллов)</i>
+</p>
+!-->
+<p>При магнитудах 6.1 и 6.9 баллов землетресения чаще происходят в знаках "фиксированного креста" (Телец, Лев, Скорпион):
+<br><img src="img/sun_in_sign/6_1_full.png">
+<br><img src="img/sun_in_sign/6_9_full.png">
+</p>
+
+<p>Землетресения менее 6 баллов чаще происходят в знаках: Рыбы, Овен, Лев, Стрелец, Козерог:
+<br><img src="img/sun_in_sign/5_6_full.png">
+<br><img src="img/sun_in_sign/5_8_full.png">
+<br><img src="img/sun_in_sign/5_5_full.png">
+<br><img src="img/sun_in_sign/5_7_full.png">
+</p>
+<br>Лидеры отклонения от среднего по количеству землетресений:
+<br>Телец +45.5% при магнитуде 6.9 баллов
+<br>Скорпион +44.0% при магнитуде 6.8 баллов
+<br>Весы +44% при магнитуде 6.7 баллов
+</p>
+<hr>
+<p>
+Данные для исследования можно загрузить из репозитария на <a href="https://github.com/alchemist314/astro_research/tree/main/earthquake_research">Github</a>
+</p>
+<p>
+Страница будет обновляться по мере поступления новой информации.
+</p>
+<p>
+Если у вас есть замечания или предложения по дальнейшему ходу исследований, просьба направлять их на почту: magentrum собака gmail точка com.
+</p>
+</div>
+</body>
+</html>
