@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My HTML Page</title>
+  <title>Earthquake research (https://astro-online.ru/earthquake.html)</title>
 </head>
 <body>
 <div align=justify id=little>
@@ -46,7 +46,7 @@
   	    <td>
   		<div style="width: 300px;">
   		    <div style="width: 100%;background-color: #e0e0e0;padding: 3px;border-radius: 3px;box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);" />
-      			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 30%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">30%</span>
+      			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 35%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">35%</span>
   		    </div>
   		</div>
   	    </td>
@@ -84,14 +84,7 @@
 <tr><td>6.9</td><td>198</td></tr>
 <tr><td>7</td><td>152</td></tr>
 </table>
-<!--
-  <p><b>Фазы исследования:</b>
-    <br>1. Положение планет в знаках Зодиака (сбор и анализ статистики) <---текущее исследование.
-    <br><font color='gray'>2. Подсчет аспектов (угловые расстояния между планетами)</font>
-    <br><font color='gray'>3. Влияние фаз Луны</font>
-    <br><font color='gray'>4. Астрологические дома</font>
-</p>
-!-->
+
 <h3>2. Положение планет в знаках Зодиака</h3>
 Для примера рассмотрим положение Солнца в знаках Зодиака при магнитуде в 6.6 баллов по шкале Рихтера (<i>шкала Рихтера - величина, характеризующая энергию, которая выделяется при землетрясении в виде сейсмических волн</i>).
 <p>Исходные данные (кол-во землетресений):
@@ -276,11 +269,11 @@
 </table>
 <br>
 Отобразим итоговые значения на графике:
-<br><img src="img/earthquake_count.png">
+<br><img src="img/deviations/chart_sun.png">
 <!--
 <br><i>В таблице указаны округленные значения отклонения количества землетресений от среднего</i>
 !-->
-<h3>Предварительные итоги:</h3>
+<h3>Предварительные итоги (Солнце):</h3>
 <p>
 - Лидеры по количеству землетресений - Скорпион и Рыбы (представители водной стихии).
 <br>- Лидеры по минимальному количеству землетресений - Водолей (0 категорий) и Козерог (1 категория с магнитудой 5.7 баллов).
@@ -301,12 +294,199 @@
 <br><img src="img/sun_in_sign/5_5_full.png">
 <br><img src="img/sun_in_sign/5_7_full.png">
 </p>
-<br>Лидеры отклонения от среднего по количеству землетресений:
-<br>Телец +45.5% при магнитуде 6.9 баллов
-<br>Скорпион +44.0% при магнитуде 6.8 баллов
-<br>Весы +44% при магнитуде 6.7 баллов
-</p>
 <hr>
+<b>Луна</b>
+<br><br>
+<table border=1>
+
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+  
+<tr align='center'><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.4</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.8</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.9</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.1</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.2</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6.3</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6.4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td></tr>
+<tr align='center'><td>6.5</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td></tr>
+<tr align='center'><td>6.8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.9</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>7</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>итого</td>
+<td>2</td><td>3</td><td>8</td><td>4</td><td>8</td><td>4</td><td>2</td><td>1</td><td>6</td><td>5</td><td>2</td><td>4</td></tr>
+</table>
+
+<br><img src="img/deviations/chart_moon.png">
+<br>Лидеры: Близнецы, Лев, Стрелец.
+<hr>
+<b>Меркурий</b>
+<br><br>
+<table border=1>
+
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+  
+<tr align='center'><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.9</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.2</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td></tr>
+<tr align='center'><td>6.3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.5</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td></tr>
+<tr align='center'><td>6.8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.9</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td></tr>
+<tr align='center'><td>7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td></tr>
+<tr align='center'><td>итого</td>
+<td>1</td><td>2</td><td>2</td><td>0</td><td>3</td><td>2</td><td>8</td><td>17</td><td>12</td><td>8</td><td>13</td><td>4</td></tr>
+</table>
+<br><img src="img/deviations/chart_mercury.png">
+<br>Стоит иметь в виду, что Меркурий в геоцентрической системе координат не отходит от Солнца более чем на 28 градусов.
+<br>Лидирует Скорпион.
+<hr>
+<b>Венера</b>
+<br><br>
+<table border=1>
+
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+  
+<tr align='center'><td>5</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.1</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.2</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.3</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.4</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.5</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.6</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.7</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.8</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.9</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.1</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.2</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.3</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.4</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.5</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.6</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.7</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.9</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>7</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>итого</td>
+<td>16</td><td>1</td><td>17</td><td>0</td><td>9</td><td>3</td><td>3</td><td>17</td><td>0</td><td>9</td><td>8</td><td>0</td></tr>
+</table>
+<br><img src="img/deviations/chart_venus.png">
+<br>В геоцентрической системе координат Венера не отходит от Солнца более чем на 49 градусов.
+<br>Лидеры: Скорпион, Близнецы, Овен.
+<hr>
+<b>Марс</b>
+<br><br>
+<table border=1>
+
+  <tr>
+    <td>Магнитуда</td>
+    <td>Ari</td>
+    <td>Tau</td>
+    <td>Gem</td>
+    <td>Cnc</td>
+    <td>Leo</td>
+    <td>Vir</td>
+    <td>Lib</td>
+    <td>Sco</td>
+    <td>Sgr</td>
+    <td>Cap</td>
+    <td>Aqr</td>
+    <td>Psc</td>
+  </tr>
+  
+<tr align='center'><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.1</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.2</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.3</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.4</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.5</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.6</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>5.9</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.1</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.2</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.3</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.4</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.7</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.8</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>6.9</td><td>&nbsp;</td><td>&nbsp;</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>7</td><td>&nbsp;</td><td>+</td><td>+</td><td>&nbsp;</td><td>+</td><td>+</td><td>+</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr align='center'><td>итого</td>
+<td>1</td><td>1</td><td>17</td><td>17</td><td>19</td><td>14</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</table>
+<br><img src="img/deviations/chart_mars.png">
+<br>Лидеры: Лев, Рак, Близнецы, Дева.
+<hr>
+
 <p>
 Данные для исследования можно загрузить из репозитария проекта на <a href="https://github.com/alchemist314/astro_research/tree/main/earthquake_research" target='blank'>Github</a>
 </p>
@@ -316,6 +496,7 @@
 <p>
 Если у вас есть замечания или предложения по дальнейшему ходу исследований, просьба направлять их на почту: magentrum собака gmail точка com.
 </p>
+<br>Update: 19.03.2024
 </div>
 </body>
 </html>
