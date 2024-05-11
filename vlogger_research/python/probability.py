@@ -14,7 +14,7 @@ import os
 
 data=[]
 # Загрузка файла с подсчетом количества аспектов
-fileName = open("../data/3.60.4_1000", 'r')
+fileName = open("../probability/3.60.4_1000", 'r')
 for l in fileName:
     l=int(l.rstrip())
     data.append(l)
