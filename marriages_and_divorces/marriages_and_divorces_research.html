@@ -27,7 +27,7 @@
     	    <td>
     		<div style="width: 300px;">
     		    <div style="width: 100%;background-color: #e0e0e0;padding: 3px;border-radius: 3px;box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);" />
-        			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 80%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">80%</span>
+        			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 81%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">81%</span>
     		    </div>
     		</div>
     	    </td>
@@ -40,6 +40,9 @@
 <br>Посчитаем количество разводов в парах знаков зодиака.
 <br><br>У нас получится список состоящий из следующих значений: первая колонка - знак зодиака мужчины, вторая - знак женщины, третья - количество заявлений о разводе для этого сочетания знаков:
 </p>
+<div style="display: inline-block;white-space:pre;line-height:12px">
+<a href="javascript:void(0)" onclick="fCounter(1);">Таблица сочетания по знаку Солнца</a>
+  <div id="a_1">
 <table border=1 width=250 cellspacing=1 cellpadding=1>
 <tr align=center>
     <td>Мужчина</td>
@@ -192,6 +195,170 @@
 </td></tr><tr><td>Козерог</td><td>Весы</td><td>14
 </td></tr></table>
 <p>
+Если принять максимальное число разводов за 1% (плохая совместимость), а минимальное число за 99% (хорошая совместимость), то получится таблица совместимости по знаку Солнца:
+</p>
+<br><img src="img/compatibility_sun.png">
+</div>
+<a href="javascript:void(0)" onclick="fCounter(2);">Таблица сочетания по знаку Луны</a>
+  <div id="a_2">
+    <table border=1 width=250 cellspacing=1 cellpadding=1>
+<tr align=center>
+    <td>Мужчина</td>
+    <td>Женщина</td>
+    <td>Кол-во разводов</td>
+<tr>
+<tr><td>Скорпион</td><td>Весы</td><td>46
+</td></tr><tr><td>Стрелец</td><td>Стрелец</td><td>44
+</td></tr><tr><td>Лев</td><td>Телец</td><td>42
+</td></tr><tr><td>Козерог</td><td>Телец</td><td>41
+</td></tr><tr><td>Водолей</td><td>Скорпион</td><td>40
+</td></tr><tr><td>Рак</td><td>Водолей</td><td>40
+</td></tr><tr><td>Рыбы</td><td>Рак</td><td>39
+</td></tr><tr><td>Рак</td><td>Рыбы</td><td>39
+</td></tr><tr><td>Рыбы</td><td>Козерог</td><td>38
+</td></tr><tr><td>Рак</td><td>Стрелец</td><td>38
+</td></tr><tr><td>Весы</td><td>Овен</td><td>38
+</td></tr><tr><td>Рыбы</td><td>Рыбы</td><td>37
+</td></tr><tr><td>Дева</td><td>Весы</td><td>37
+</td></tr><tr><td>Дева</td><td>Овен</td><td>37
+</td></tr><tr><td>Весы</td><td>Телец</td><td>37
+</td></tr><tr><td>Весы</td><td>Лев</td><td>37
+</td></tr><tr><td>Рак</td><td>Дева</td><td>37
+</td></tr><tr><td>Овен</td><td>Весы</td><td>37
+</td></tr><tr><td>Близнецы</td><td>Весы</td><td>37
+</td></tr><tr><td>Скорпион</td><td>Рыбы</td><td>36
+</td></tr><tr><td>Весы</td><td>Стрелец</td><td>36
+</td></tr><tr><td>Телец</td><td>Близнецы</td><td>36
+</td></tr><tr><td>Дева</td><td>Скорпион</td><td>36
+</td></tr><tr><td>Стрелец</td><td>Водолей</td><td>36
+</td></tr><tr><td>Стрелец</td><td>Весы</td><td>35
+</td></tr><tr><td>Рыбы</td><td>Стрелец</td><td>35
+</td></tr><tr><td>Стрелец</td><td>Рак</td><td>35
+</td></tr><tr><td>Козерог</td><td>Овен</td><td>35
+</td></tr><tr><td>Близнецы</td><td>Рак</td><td>35
+</td></tr><tr><td>Телец</td><td>Скорпион</td><td>35
+</td></tr><tr><td>Дева</td><td>Дева</td><td>35
+</td></tr><tr><td>Телец</td><td>Козерог</td><td>35
+</td></tr><tr><td>Стрелец</td><td>Близнецы</td><td>34
+</td></tr><tr><td>Лев</td><td>Близнецы</td><td>34
+</td></tr><tr><td>Овен</td><td>Лев</td><td>34
+</td></tr><tr><td>Близнецы</td><td>Телец</td><td>34
+</td></tr><tr><td>Стрелец</td><td>Рыбы</td><td>33
+</td></tr><tr><td>Скорпион</td><td>Стрелец</td><td>33
+</td></tr><tr><td>Овен</td><td>Стрелец</td><td>33
+</td></tr><tr><td>Водолей</td><td>Стрелец</td><td>33
+</td></tr><tr><td>Лев</td><td>Весы</td><td>33
+</td></tr><tr><td>Телец</td><td>Рак</td><td>33
+</td></tr><tr><td>Стрелец</td><td>Лев</td><td>32
+</td></tr><tr><td>Близнецы</td><td>Водолей</td><td>32
+</td></tr><tr><td>Рак</td><td>Весы</td><td>32
+</td></tr><tr><td>Лев</td><td>Рак</td><td>32
+</td></tr><tr><td>Овен</td><td>Близнецы</td><td>32
+</td></tr><tr><td>Весы</td><td>Водолей</td><td>32
+</td></tr><tr><td>Телец</td><td>Рыбы</td><td>32
+</td></tr><tr><td>Дева</td><td>Козерог</td><td>32
+</td></tr><tr><td>Весы</td><td>Козерог</td><td>32
+</td></tr><tr><td>Козерог</td><td>Рыбы</td><td>32
+</td></tr><tr><td>Козерог</td><td>Козерог</td><td>32
+</td></tr><tr><td>Лев</td><td>Козерог</td><td>32
+</td></tr><tr><td>Козерог</td><td>Лев</td><td>31
+</td></tr><tr><td>Дева</td><td>Близнецы</td><td>31
+</td></tr><tr><td>Водолей</td><td>Рыбы</td><td>31
+</td></tr><tr><td>Водолей</td><td>Близнецы</td><td>31
+</td></tr><tr><td>Весы</td><td>Скорпион</td><td>31
+</td></tr><tr><td>Стрелец</td><td>Скорпион</td><td>31
+</td></tr><tr><td>Телец</td><td>Лев</td><td>31
+</td></tr><tr><td>Лев</td><td>Рыбы</td><td>31
+</td></tr><tr><td>Дева</td><td>Рыбы</td><td>31
+</td></tr><tr><td>Рыбы</td><td>Скорпион</td><td>31
+</td></tr><tr><td>Стрелец</td><td>Козерог</td><td>30
+</td></tr><tr><td>Дева</td><td>Водолей</td><td>30
+</td></tr><tr><td>Телец</td><td>Дева</td><td>30
+</td></tr><tr><td>Рак</td><td>Рак</td><td>30
+</td></tr><tr><td>Близнецы</td><td>Близнецы</td><td>30
+</td></tr><tr><td>Скорпион</td><td>Козерог</td><td>30
+</td></tr><tr><td>Весы</td><td>Близнецы</td><td>30
+</td></tr><tr><td>Лев</td><td>Лев</td><td>30
+</td></tr><tr><td>Телец</td><td>Весы</td><td>30
+</td></tr><tr><td>Рак</td><td>Козерог</td><td>30
+</td></tr><tr><td>Козерог</td><td>Рак</td><td>30
+</td></tr><tr><td>Близнецы</td><td>Овен</td><td>29
+</td></tr><tr><td>Рыбы</td><td>Весы</td><td>29
+</td></tr><tr><td>Дева</td><td>Лев</td><td>29
+</td></tr><tr><td>Рак</td><td>Телец</td><td>29
+</td></tr><tr><td>Рыбы</td><td>Дева</td><td>29
+</td></tr><tr><td>Овен</td><td>Телец</td><td>29
+</td></tr><tr><td>Близнецы</td><td>Стрелец</td><td>29
+</td></tr><tr><td>Козерог</td><td>Стрелец</td><td>29
+</td></tr><tr><td>Близнецы</td><td>Лев</td><td>29
+</td></tr><tr><td>Скорпион</td><td>Близнецы</td><td>29
+</td></tr><tr><td>Козерог</td><td>Скорпион</td><td>29
+</td></tr><tr><td>Стрелец</td><td>Овен</td><td>29
+</td></tr><tr><td>Скорпион</td><td>Лев</td><td>29
+</td></tr><tr><td>Скорпион</td><td>Рак</td><td>29
+</td></tr><tr><td>Козерог</td><td>Весы</td><td>29
+</td></tr><tr><td>Весы</td><td>Дева</td><td>28
+</td></tr><tr><td>Овен</td><td>Водолей</td><td>28
+</td></tr><tr><td>Водолей</td><td>Весы</td><td>28
+</td></tr><tr><td>Телец</td><td>Овен</td><td>28
+</td></tr><tr><td>Водолей</td><td>Овен</td><td>28
+</td></tr><tr><td>Весы</td><td>Весы</td><td>28
+</td></tr><tr><td>Весы</td><td>Рыбы</td><td>28
+</td></tr><tr><td>Скорпион</td><td>Телец</td><td>28
+</td></tr><tr><td>Рыбы</td><td>Лев</td><td>28
+</td></tr><tr><td>Козерог</td><td>Водолей</td><td>28
+</td></tr><tr><td>Овен</td><td>Скорпион</td><td>27
+</td></tr><tr><td>Рак</td><td>Овен</td><td>27
+</td></tr><tr><td>Телец</td><td>Стрелец</td><td>27
+</td></tr><tr><td>Овен</td><td>Козерог</td><td>27
+</td></tr><tr><td>Водолей</td><td>Рак</td><td>27
+</td></tr><tr><td>Лев</td><td>Водолей</td><td>27
+</td></tr><tr><td>Водолей</td><td>Лев</td><td>27
+</td></tr><tr><td>Рак</td><td>Близнецы</td><td>27
+</td></tr><tr><td>Овен</td><td>Овен</td><td>27
+</td></tr><tr><td>Скорпион</td><td>Водолей</td><td>27
+</td></tr><tr><td>Рыбы</td><td>Близнецы</td><td>27
+</td></tr><tr><td>Рак</td><td>Лев</td><td>27
+</td></tr><tr><td>Козерог</td><td>Дева</td><td>27
+</td></tr><tr><td>Козерог</td><td>Близнецы</td><td>27
+</td></tr><tr><td>Дева</td><td>Телец</td><td>27
+</td></tr><tr><td>Стрелец</td><td>Дева</td><td>27
+</td></tr><tr><td>Лев</td><td>Стрелец</td><td>27
+</td></tr><tr><td>Водолей</td><td>Дева</td><td>26
+</td></tr><tr><td>Дева</td><td>Рак</td><td>26
+</td></tr><tr><td>Рыбы</td><td>Овен</td><td>26
+</td></tr><tr><td>Овен</td><td>Рак</td><td>26
+</td></tr><tr><td>Водолей</td><td>Водолей</td><td>26
+</td></tr><tr><td>Скорпион</td><td>Скорпион</td><td>26
+</td></tr><tr><td>Стрелец</td><td>Телец</td><td>26
+</td></tr><tr><td>Лев</td><td>Скорпион</td><td>26
+</td></tr><tr><td>Весы</td><td>Рак</td><td>25
+</td></tr><tr><td>Близнецы</td><td>Скорпион</td><td>25
+</td></tr><tr><td>Телец</td><td>Телец</td><td>25
+</td></tr><tr><td>Овен</td><td>Рыбы</td><td>24
+</td></tr><tr><td>Скорпион</td><td>Дева</td><td>24
+</td></tr><tr><td>Водолей</td><td>Телец</td><td>24
+</td></tr><tr><td>Лев</td><td>Дева</td><td>24
+</td></tr><tr><td>Телец</td><td>Водолей</td><td>23
+</td></tr><tr><td>Рыбы</td><td>Телец</td><td>23
+</td></tr><tr><td>Лев</td><td>Овен</td><td>23
+</td></tr><tr><td>Близнецы</td><td>Дева</td><td>23
+</td></tr><tr><td>Водолей</td><td>Козерог</td><td>23
+</td></tr><tr><td>Дева</td><td>Стрелец</td><td>22
+</td></tr><tr><td>Близнецы</td><td>Рыбы</td><td>22
+</td></tr><tr><td>Овен</td><td>Дева</td><td>22
+</td></tr><tr><td>Скорпион</td><td>Овен</td><td>22
+</td></tr><tr><td>Рак</td><td>Скорпион</td><td>21
+</td></tr><tr><td>Близнецы</td><td>Козерог</td><td>20
+</td></tr><tr><td>Рыбы</td><td>Водолей</td><td>18
+</td></tr></table>
+<p>
+Если принять максимальное число разводов за 1% (плохая совместимость), а минимальное число за 99% (хорошая совместимость), то получится таблица совместимости по знаку Луны:
+</p>
+<br><img src="img/compatibility_moon.png">
+</div>
+</div>
+<p>
 Нормальное распределения для этой выборки будет выглядеть следующим образом:
 <br>
 <img src="img/norm_distrib.png">
@@ -199,15 +366,11 @@
 <i>(крайние стороны графика отображают максимальное (45 записей- правая сторона) и минимальное (14 записей- левая сторона) количество разводов в парах)</i>
 </p>
 <p>
-Если принять максимальное число разводов за 1% (плохая совместимость), а минимальное число за 99% (хорошая совместимость), то получится таблица совместимости:
-</p>
-<br><img src="img/compatibility.png">
-<p>
 Теперь взглянем как обстоят дела со стихиями.
 </p>
 <p>
 Подсчет стихий будет осуществляться следующим методом:
-<br>Расчитываем в каких знаках зодиака находятся планеты для выбранной даты, затем для каждой планеты расчитываем стихию, например: Солнце в Козероге даст стихию Земли, Луна в Овне даст стихию Огня, если же Луна будет в Козероге, то это даст еще большее усиление стихии Земли, в итоге какая-то стихия станет доминирующей, она и будет учитываться. Для более яркой выраженности стихии будем использовать следующие коэффициенты: Солнце и Луна - 3 балла; Меркурий, Венера, Марс - 2 балла; Юпитер, Сатурн, Уран, Нептун и Плутон - 1 балл. У нас получится супружеская пара, где вместо знаков зодиака будут фигурировать стихии:
+<br>Расcчитываем в каких знаках зодиака находятся планеты для выбранной даты, затем для каждой планеты расcчитываем стихию, например: Солнце в Козероге даст стихию Земли, Луна в Овне даст стихию Огня, если же Луна будет в Козероге, то это даст еще большее усиление стихии Земли, в итоге какая-то стихия станет доминирующей, она и будет учитываться. Для более яркой выраженности стихии будем использовать следующие коэффициенты: Солнце и Луна - 3 балла; Меркурий, Венера, Марс - 2 балла; Юпитер, Сатурн, Уран, Нептун и Плутон - 1 балл. У нас получится супружеская пара, где вместо знаков зодиака будут фигурировать стихии:
 </p>
 
 <table border=1 width=250 cellspacing=1 cellpadding=1>
@@ -265,4 +428,22 @@
 <p>
 Если у вас есть замечания или предложения по дальнейшему ходу исследований, просьба направлять их на почту: magentrum собака gmail точка com.
 </p>
-<br>Update: 09.05.2024
+<br>Update: 19.06.2024
+<script>
+  var aCounter = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+  for(l=1;l<=aCounter.length; l++) {
+    if (document.getElementById('a_' + l)) {
+      document.getElementById('a_' + l).style.display = 'none';
+    }
+  }
+  function fCounter(val) {
+    if ((aCounter[val] > 0) || (aCounter[val] === undefined)) {
+        aCounter[val] = 0;
+        document.getElementById('a_' + val).style.display = 'block';
+    } else {
+        aCounter[val] = 1;
+        document.getElementById('a_' + val).style.display = 'none';
+    }
+}
+
+</script>
