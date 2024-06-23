@@ -29,8 +29,8 @@
 В ходе сбора статистики выяснилось, что влоггеров миллионников огромное множество, в выборку попала лишь малая часть: США, Россия, Венесуэла, Испания, Великобритания.
 По каждому знаку было добавлено по 50 влоггеров имеющих более 1 млн. подписчиков.
 </p>
-<br><center><img src="cache/img/vlg_600/zodiac.png"></center>
-<br><center><img src="cache/img/vlg_600/elements.png"></center>
+<br><center><img src="img/zodiac.png"></center>
+<br><center><img src="img/elements.png"></center>
 <br><strong>2-4. Подсчет аспектов / генерация случайных дат рождений</strong>
 <p><a href="https://astro-online.ru/articles/table_vlg_1251.html" target="blank">таблица</a></p>
 <br>
@@ -55,19 +55,19 @@
  <br><br>Для нашего примера из таблицы:
  <br><br>имеем величины: 57,56,57,59,62,58,59,73
  <br> вычисляем среднее значение (мат. ожидание):
- <br><center><img src="cache/img/vlg_600/raschet_avg_mars_pluton.png" width=300></center>
+ <br><center><img src="img/raschet_avg_mars_pluton.png"></center>
  <br> вычисляем среднее арифметическое квадратов отклонений (дисперсию):
- <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-1.png"></center>
- <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-2.png"></center>
- <center><img src="cache/img/vlg_600/raschet-disp3-mars-pluton-3.png"></center>
+ <center><img src="img/raschet_disp3_mars_pluton_1.png"></center>
+ <center><img src="img/raschet_disp3_mars_pluton_2.png"></center>
+ <center><img src="img/raschet_disp3_mars_pluton_3.png"></center>
 <br> берем корень и получаем стандартное отклонение (сигма):
-<center><img src="cache/img/vlg_600/raschet_sred_mars_pluton.png" width=150></center>
+<center><img src="img/raschet_sred_mars_pluton.png"></center>
 <br> теперь мы можем посчитать вероятность получения указанного количества аспектов по формуле Лапласа:
-<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti.png" width=300 ></center>
+<center><img src="img/gauss_formula_rashet_veroyatnosti.png"></center>
 <br>Например, какая вероятность, что искомое значение (сумма аспектов  "Квадратура Марс-Плутон (угловое расстояние между Марсом и Плутоном 90 градусов)" в датах рождения 600 влоггеров) будет находиться в диапазоне от 82 до 84?
 <br><br>Подставляем в формулу значения: x1=82, x2=84, &sigma;=5, &alpha;=60, получаем:
-<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti_solution.png"></center>
-<center><img src="cache/img/vlg_600/gauss_formula_rashet_veroyatnosti_solution1.png"></center>
+<center><img src="img/gauss_formula_rashet_veroyatnosti_solution.png"></center>
+<center><img src="img/gauss_formula_rashet_veroyatnosti_solution1.png"></center>
 (значение Ф(4.8) округляем до Ф(5.0), значение Ф(4.4) округляем до Ф(4.0), далее по <a href="https://astro-online.ru/lnk016.html?r=https://ya.ru/search/?text=таблица+значений+интегральной+функции+лапласа" target="blank">таблице значений интегральной функции Лапласа</a> ищем искомые величины).
 <br><br>Итоговая вероятность получилась равной 0,000029 или 1 / 34482 !
 <br><br>
@@ -84,7 +84,7 @@ print(calc.pdf(83))
 </div>
 
 <br>Для более равномерного распределения случайных дат рождений использовался подсчет количества аспектов "Квадратура Марс-Плутон" не в 8 случайных выборках по 600 дат, а в 1000:
-<center><img src="cache/img/vlg_600/gauss_square_mars_pluton.png" width=350 class="current_img"></center>
+<center><img src="img/gauss_square_mars_pluton.png"></center>
 <center><i>(на графике - нормальное распределение (колоколообразная кривая с пиком в центре, распределение Гаусса-Лапласа) сумм аспектов "Квадратура Марс-Плутон" в 1000 выборках по 600 случайных дат рождений, красная пунктирная линия - количество аспектов "Квадратура Марс-Плутон" в датах рождения 600 исследуемых влоггеров.)</i></center>
 <br>Что показывает этот график?
  <br>На графике отображено насколько маловероятно получить значение 83, случайно генерируя даты рождений (число лежит практически за пределами графика - более 4-х стандартных отклонений (сигм)).
@@ -105,21 +105,21 @@ print(calc.pdf(83))
 </i>
 
 <br><br>Для примера, как выглядит величина, которая не маловероятна -"Тригон Меркурий-Марс" (угловое расстояние между Меркурием и Марсом 120 градусов):
- <br><center><img src="cache/img/vlg_600/gauss_triangle_mercury_mars.png" width=350 class="current_img"></center>
+ <br><center><img src="img/gauss_triangle_mercury_mars.png"></center>
  <br><center>Вероятность 0.06 или 1 / 15</center>
  <br>Можно подумать, что это из за того, что Меркурий -быстрая планета и это влияет на частоту выпадания аспекта, но  взглянем на аспект "Секстиль Меркурий-Венера" (угловое расстояние между Меркурием и Венерой 60 градусов):
-  <br><center><img src="cache/img/vlg_600/gauss_sextile_mercury_venus.png" width=350 class="current_img"></center>
+  <br><center><img src="img/gauss_sextile_mercury_venus.png"></center>
  <br><center>(Вероятность 0.00248 или 1 / 402)</center>
  <br>
  <br><strong>Варианты обьяснения полученных аномалий:</strong>
 <br><br><center>Возраст влоггеров миллионников:</center>
-<br><center><img src="cache/img/vlg_600/age.png" width=350 class="current_img"></center>
+<br><center><img src="img/age.png"></center>
 <p>
 Разберем более подробней на примере аспекта "Квадратура Марс-Плутон", за счет чего произошло отклонение.
 <br>83 человека из 600  имеют указаный аспект:
-<center><img src="cache/img/vlg_600/births_mars_pluton.png" width=350 class="current_img"></center>
+<center><img src="img/births_mars_pluton.png"></center>
 <br>Из них 39 человек (1994-1996) родились в период 1994-2000, когда данный аспект встречался в 2-3 раза чаще чем обычно (52-82 дня в году, вместо 22-30 в другие годы):
-<center><img src="cache/img/vlg_600/days_in_year_mars_pluton.png" width=350 class="current_img"></center>
+<center><img src="img/days_in_year_mars_pluton.png"></center>
  Это привело к тому, что данный аспект встречается у влоггеров из выборки аномально часто (случайная генерация дат рождений не дала схожей картины).
  <br><br><b>Астрологическое обьяснение:</b>
  <br><br>Влоггеры часто рождались в период времени, когда наблюдалась квадратура Марса к Плутону (во внимание не берется ни в каких знаках находились указанные планеты, ни возможное влияние целого комплекса аспектов или других астрологических критериев).
@@ -130,37 +130,76 @@ print(calc.pdf(83))
 </ol>
 <br><strong>Итоговая таблица по аномалиям:</strong>
 <br>
+<br>(вероятность расчитана для 8 выборок по 600 дат; кликните на аспект, чтобы посмотреть вероятность для 1000 выборок по 600 дат)
+<br>
 <br>Max - аспект встречается аномально часто.
 <br>Min - аспект встречается аномально редко.
 <br>
 <br><b>вероятность 1/1000 и менее (за пределами нормального распределения):</b>
 <br>
-<br>Квадратура Марс-Плутон - Max
-<br>Оппозиция Солнце-Уран - Min
-<br>Оппозиция Солнце-Сатурн - Min
-<br>Тригон Марс-Сатурн - Min
-<br>Секстиль Меркурий-Венера - Max
-<br>Секстиль Марс-Юпитер - Min
-<br>Секстиль Венера-Уран - Max
-<br>Квадратура Венера-Марс - Min
-<br>Соединение Меркурий-Нептун - Max
+<div style="display: inline-block;white-space:pre;line-height:12px">
+<a href="javascript:void(0)" onclick="fCounter(1);">Квадратура Марс-Плутон</a>
+  <div id="a_1">вероятность для 1000 выборок: 1/3702 (0.0002701069)<br><img src="img/gauss/gauss_square_mars_pluton.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(2);">Оппозиция Солнце-Уран</a>
+  <div id="a_2">вероятность для 1000 выборок: 1/487 (0.0020519080)<br><img src="img/gauss/gauss_opposition_sun_uran.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(3);">Оппозиция Солнце-Сатурн</a>
+  <div id="a_3">вероятность для 1000 выборок: 1/265 (0.0037621053)<br><img src="img/gauss/gauss_opposition_sun_saturn.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(4);">Тригон Марс-Сатурн</a>
+  <div id="a_4">вероятность для 1000 выборок: 1/263 (0.0037968748)<br><img src="img/gauss/gauss_triangle_mars_saturn.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(5);">Секстиль Меркурий-Венера</a>
+  <div id="a_5">вероятность для 1000 выборок: 1/392 (0.0025449610)<br><img src="img/gauss/gauss_sextile_mercury_venus.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(6);">Секстиль Марс-Юпитер</a>
+  <div id="a_6">вероятность для 1000 выборок: 1/97 (0.0102597410)<br><img src="img/gauss/gauss_sextile_mars_jupiter.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(7);">Секстиль Венера-Уран</a>
+  <div id="a_7">вероятность для 1000 выборок: 1/154 (0.0064577678)<br><img src="img/gauss/gauss_sextile_venus_uran.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(8);">Квадратура Венера-Марс</a>
+  <div id="a_8">вероятность для 1000 выборок: 1/318 (0.0031364830)<br><img src="img/gauss/gauss_square_venus_mars.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(9);">Соединение Меркурий-Нептун</a>
+  <div id="a_9">вероятность для 1000 выборок: 1/23 (0.0426045220)<br><img src="img/gauss/gauss_conjunction_mercury_neptun.png" width="350" class="current_img"></div>
 <br>
-<br><b>вероятность от 1/200 до 1/1000:</b>
-<br><br>Секстиль Меркурий-Марс - Max
-<br>Секстиль Солнце-Сатурн - Max
-<br>Оппозиция Солнце-Юпитер - Max
-<br>Секстиль Юпитер-Уран - Max
-<br>Квадратура Луна-Венера - Max
-<br>Секстиль Сатурн-Нептун -Min
-<br>Секстиль Уран-Плутон - Max
-<br>Оппозиция Меркурий-Сатурн - Min
-<br>Секстиль Нептун-Плутон -Min
+<b>вероятность от 1/200 до 1/1000:</b>
+
+<a href="javascript:void(0)" onclick="fCounter(10);">Секстиль Меркурий-Марс</a>
+  <div id="a_10">вероятность для 1000 выборок: 1/103 (0.0096406470)<br><img src="img/gauss/gauss_sextile_mercury_mars.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(11);">Секстиль Солнце-Сатурн</a>
+  <div id="a_11">вероятность для 1000 выборок: 1/185 (0.0053960988)<br><img src="img/gauss/gauss_sextile_sun_saturn.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(12);">Оппозиция Солнце-Юпитер</a>
+  <div id="a_12">вероятность для 1000 выборок: 1/140 (0.0071204133)<br><img src="img/gauss/gauss_opposition_sun_jupiter.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(13);">Секстиль Юпитер-Уран</a>
+  <div id="a_13">вероятность для 1000 выборок: 1/74 (0.0134865655)<br><img src="img/gauss/gauss_sextile_jupiter_uran.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(14);">Квадратура Луна-Венера</a>
+  <div id="a_14">вероятность для 1000 выборок: 1/102 (0.0097982360)<br><img src="img/gauss/gauss_square_moon_venus.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(15);">Секстиль Сатурн-Нептун</a>
+  <div id="a_15">вероятность для 1000 выборок: 1/32 (0.0306059657)<br><img src="img/gauss/gauss_sextile_saturn_neptun.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(16);">Секстиль Уран-Плутон</a>
+  <div id="a_16">вероятность для 1000 выборок: 1/813 (0.0012290935)<br><img src="img/gauss/gauss_sextile_uran_pluton.png" width="350" class="current_img"></div>
+<a href="javascript:void(0)" onclick="fCounter(17);">Оппозиция Меркурий-Сатурн</a>
+  <div id="a_17">вероятность для 1000 выборок: 1/66 (0.0149475595)<br><img src="img/gauss/gauss_opposition_mercury_saturn.png" width="350" class="current_img"></div>
+</div>
+<script>
+  var aCounter = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+  for(l=1;l<=aCounter.length; l++) {
+    if (document.getElementById('a_' + l)) {
+      document.getElementById('a_' + l).style.display = 'none';
+    }
+  }
+  function fCounter(val) {
+    if ((aCounter[val] > 0) || (aCounter[val] === undefined)) {
+        aCounter[val] = 0;
+        document.getElementById('a_' + val).style.display = 'block';
+    } else {
+        aCounter[val] = 1;
+        document.getElementById('a_' + val).style.display = 'none';
+    }
+}
+
+</script>
 
 <br><br>
 
 Благодарю всех, кто принял участие в эксперименте и  присылал ссылки на каналы влоггеров!
 <br>
-<br>update: 11.12.2023
+<br>update: 23.06.2024
 </div>
 <br><br><br>
 <br><br><br>
