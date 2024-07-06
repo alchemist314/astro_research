@@ -1,7 +1,14 @@
-<h3> Исследование базы с записями о браках и разводах</h3>
+<!--
+<table width="98%"  border="1" cellpadding="0" cellspacing="0" id="navitable">
+      <tr>
+        <td id="navitable" align="left" style="max-width: 100px; overflow:hidden;text-overflow:ellipsis;">
+!-->
+<h3><b>Исследование браков и разводов</b></h3><hr noshade="noshade" size="1">
+
+<div style="background-color:#fff; text-align:left; font-size:14px;">
 
 <p>
-Интерес для любителей астрологии представляет база <a href="https://datos.gob.mx/busca/dataset/registro-civil" target="_blank">опубликованная</a> в 2017 году правительством Мексики со статистикой браков и разводов города Xalapa-Enríquez штата Veracruz за период с 2000 по 2015 год. В базе чуть более 4000 записей, есть даты заключения браков и даты рождения супругов. Базу можно исследовать по разным параметрам: совместимость партнеров, удачность/неудачность выбранных дат для заключения брака и т.д. К сожалению, в базе отсутствует время рождения. Взглянем, что же можно извлечь из этой базы.
+Интерес для любителей астрологии представляет база <a href="lnk020.html?rdr=https://datos.gob.mx/busca/dataset/registro-civil" target="_blank">опубликованная</a> в 2017 году правительством Мексики со статистикой браков и разводов города Xalapa-Enriquez штата Veracruz за период с 2000 по 2015 год. В базе чуть более 4000 записей, есть даты заключения браков и даты рождения супругов. Базу можно исследовать по разным параметрам: совместимость партнеров, удачность/неудачность выбранных дат для заключения брака и т.д. К сожалению, в базе отсутствует время рождения. Взглянем, что же можно извлечь из этой базы.
 </p>
 <p>
   <strong>Ход исследования:</strong>
@@ -27,7 +34,7 @@
     	    <td>
     		<div style="width: 300px;">
     		    <div style="width: 100%;background-color: #e0e0e0;padding: 3px;border-radius: 3px;box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);" />
-        			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 81%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">81%</span>
+        			<span style="display: block;height: 22px;background-color: #4cb32f;border-radius: 3px;transition:width 500ms ease-in-out;width: 90%;text-align:center;color:#fff;padding-top:4px;padding-right:2px;">90%</span>
     		    </div>
     		</div>
     	    </td>
@@ -197,7 +204,7 @@
 <p>
 Если принять максимальное число разводов за 1% (плохая совместимость), а минимальное число за 99% (хорошая совместимость), то получится таблица совместимости по знаку Солнца:
 </p>
-<br><img src="img/compatibility_sun.png">
+<br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/compatibility_sun.png" width="350" alt="таблица совместимости партнеров по знаку зодиака" class="current_img">
 </div>
 <a href="javascript:void(0)" onclick="fCounter(2);">Таблица сочетания по знаку Луны</a>
   <div id="a_2">
@@ -352,25 +359,28 @@
 </td></tr><tr><td>Близнецы</td><td>Козерог</td><td>20
 </td></tr><tr><td>Рыбы</td><td>Водолей</td><td>18
 </td></tr></table>
+
 <p>
 Если принять максимальное число разводов за 1% (плохая совместимость), а минимальное число за 99% (хорошая совместимость), то получится таблица совместимости по знаку Луны:
 </p>
-<br><img src="img/compatibility_moon.png">
+<br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/compatibility.png" width="350" alt="таблица совместимости партнеров по знаку зодиака" class="current_img">
 </div>
 </div>
+
 <p>
-Нормальное распределения для этой выборки будет выглядеть следующим образом:
+Нормальное распределение для этой выборки будет выглядеть следующим образом:
 <br>
-<img src="img/norm_distrib.png">
+<img src="https://astro-online.ru/articles/img/marriages_and_divorces/norm_distrib.png"  width="350">
 <br>
 <i>(крайние стороны графика отображают максимальное (45 записей- правая сторона) и минимальное (14 записей- левая сторона) количество разводов в парах)</i>
 </p>
+
 <p>
 Теперь взглянем как обстоят дела со стихиями.
 </p>
 <p>
 Подсчет стихий будет осуществляться следующим методом:
-<br>Расcчитываем в каких знаках зодиака находятся планеты для выбранной даты, затем для каждой планеты расcчитываем стихию, например: Солнце в Козероге даст стихию Земли, Луна в Овне даст стихию Огня, если же Луна будет в Козероге, то это даст еще большее усиление стихии Земли, в итоге какая-то стихия станет доминирующей, она и будет учитываться. Для более яркой выраженности стихии будем использовать следующие коэффициенты: Солнце и Луна - 3 балла; Меркурий, Венера, Марс - 2 балла; Юпитер, Сатурн, Уран, Нептун и Плутон - 1 балл. У нас получится супружеская пара, где вместо знаков зодиака будут фигурировать стихии:
+<br>Рассчитываем в каких знаках зодиака находятся планеты для выбранной даты, затем для каждой планеты рассчитываем стихию, например: Солнце в Козероге даст стихию Земли, Луна в Овне даст стихию Огня, если же Луна будет в Козероге, то это даст еще большее усиление стихии Земли, в итоге какая-то стихия станет доминирующей, она и будет учитываться. Для более яркой выраженности стихии будем использовать следующие коэффициенты: Солнце и Луна - 3 балла; Меркурий, Венера, Марс - 2 балла; Юпитер, Сатурн, Уран, Нептун и Плутон - 1 балл. У нас получится супружеская пара, где вместо знаков зодиака будут фигурировать стихии:
 </p>
 
 <table border=1 width=250 cellspacing=1 cellpadding=1>
@@ -396,19 +406,102 @@
 </td></tr><tr><td>Земля</td><td>Воздух</td><td>223
 </td></tr><tr><td>Воздух</td><td>Воздух</td><td>220
 </td></tr></table>
-<br>
 
 <br>
 График совместимости стихий:
 <br>
-<img src="img/element_combination_.png">
+<img src="https://astro-online.ru/articles/img/marriages_and_divorces/element_combination_.png" width="350" class="current_img" alt="совместимость знаков зодиака по стихиям">
 <p>
-Можно заметить преобладание огненной стихии в верхней половине таблицы, это соответствует тому, что пара со стихией Огонь+Огонь подавала на развод в городе Xalapa-Enríquez штата Veracruz с 2000 по 2015 на 62% чаще, чем пара со стихией Воздух+Воздух.
+Можно заметить преобладание огненной стихии в верхней половине таблицы, это соответствует тому, что пара со стихией Огонь+Огонь подавала на развод в городе Xalapa-Enriquez штата Veracruz с 2000 по 2015 на 62% чаще, чем пара со стихией Воздух+Воздух.
 </p>
 <p>
 Теперь взглянем на фазу Луны (номер четверти) в момент заключения брака:
 <br>
-<img src="img/moon_phases.png">
+<img src="https://astro-online.ru/articles/img/marriages_and_divorces/moon_phases.png" width="300">
+</p>
+<p>
+Далее рассмотрим аспекты планет в день заключения брака
+</p>
+<p>
+Подсчитаем кол-во всех комбинаций аспектов в день заключения брака для каждой супружеской пары.
+Так как у нас нет контрольной группы, вместо нее будет выступать случайная генерация дат рождений.
+<br>Итак, сгенерируем 8 выборок со случайными датами событий (в каждый год столько дат, сколько в этот год было заключено браков).
+</p>
+<a href="https://astro-online.ru/articles/divorce_aspect_table.html">таблица аспектов</a>
+<br>
+<br>Комментарий к таблице:
+<ul>
+<li>"Значение" - количество аспектов в датах бракосочетаний.</li>
+<li>("Шум1" - "Шум8") - количество аспектов в случайно сгенерированных датах бракосочетаний (8 выборок по 4374 дат).</li>
+<li>"Шум макс." - максимальное значение.</li>
+<li>"Шум мин." - минимальное значение.</li>
+<li>"Шум средн." - среднее арифметическое.</li>
+<li>"Сигнал" - разница между колонкой "Значение" и колонкой "Шум макс." (если "Значение" превышает максимальное) или "Шум мин." ("Значение" меньше минимального).</li>
+</ul>
+<strong>Итоговая таблица по аномалиям:</strong>
+<br>
+<br>Max - аспект встречается аномально часто.
+<br>Min - аспект встречается аномально редко.
+<br>(значение) - количество выпаданий аспекта.
+<br>1/значение - вероятность появления аспекта.
+<br>
+<br>Для каждого аспекта данной таблицы вероятности рассчитаны для 1000 выборок по 4374 дат:
+<br>
+<br>Секстиль Нептун-Плутон (4064) Min '1/2360000'
+<br>Соединение Солнце-Нептун (183) Min '1/1060000'
+<br>Соединение Солнце-Плутон (186) Max '1/483000'
+<br>Тригон Меркурий-Уран (335) Min '1/34400'
+<br>Квадратура Марс-Сатурн (420) Max '1/32900'
+<br>Тригон Солнце-Нептун (347) Min '1/21600'
+<br>Соединение Марс-Сатурн (98) Min '1/13500'
+<br>Соединение Марс-Плутон (171) Max '1/8290'
+<br>Соединение Солнце-Уран (174) Max '1/7790'
+<br>Оппозиция Марс-Сатурн (339) Max '1/3660'
+<br>Тригон Солнце-Уран (362) Min '1/1000'
+<br>Секстиль Солнце-Луна (465) Max '1/952'
+<br>Тригон Луна-Венера (451) Max '1/367'
+<br>Тригон Луна-Сатурн (446) Max '1/286'
+<br>Соединение Меркурий-Плутон (173) Max '1/204'
+<br>Секстиль Луна-Венера (388) Min '1/135'
+<br>Соединение Венера-Марс (294) Min '1/55'
+<br>
+<br><strong>Варианты обьяснения полученных аномалий:</strong>
+<p>
+В связи с тем, что практически половина мексиканцев из выборки заключала браки в декабре (вероятно, это связано с благоприятным временем года - высокий сезон в Мексике с ноября по май), это повлияло на частоту появления аспектов медленных планет (Уран, Нептун, Плутон) в день заключения брака.
+</p>
+<img src="https://astro-online.ru/articles/img/marriages_and_divorces/marriage_by_month.png" width="300">
+<p>
+Например, аспект соединения Солнца и Плутона получил аномальную вероятность выпадения 1/483000,
+что можно обьяснить тем, что в декабре Солнце находится в знаках Стрелец или Козерог, а Плутон в период выборки как раз проходил по знаку Стрелец (1995-2008) и Козерог (2008-2023 год).
+</p>
+Если исключить медленные планеты, получится следующий список:
+<br>(клинките по строке, чтобы посмотреть нормальное распределение для данного аспекта)
+<br><br>
+<a href="javascript:void(0)" onclick="fCounter(3);">Квадратура Марс-Сатурн (420) Max '1/32900'</a>
+<div id="a_3"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/5_90_7.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(5);">Соединение Марс-Сатурн (98) Min '1/13500'</a>
+<div id="a_5"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/5_0_7.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(6);">Оппозиция Марс-Сатурн (339) Max '1/3660'</a>
+<div id="a_6"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/5_180_7.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(7);">Секстиль Солнце-Луна (465) Max '1/952'</a>
+<div id="a_7"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/1_60_2.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(8);">Тригон Луна-Венера (451) Max '1/367'</a>
+<div id="a_8"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/2_120_4.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(9);">Тригон Луна-Сатурн (446) Max '1/286'</a>
+<div id="a_9"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/2_120_7.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(10);">Секстиль Луна-Венера (388) Min '1/135'</a>
+<div id="a_10"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/2_60_4.png" width="350" class="current_img"></div>
+<br><br><a href="javascript:void(0)" onclick="fCounter(11);">Соединение Венера-Марс (294) Max '1/55'</a>
+<div id="a_11"><br><img src="https://astro-online.ru/articles/img/marriages_and_divorces/normal_distribution/4_0_5.png" width="350" class="current_img"></div>
+<p>
+Таким образом можно заметить, что в день заключения брака аномально часто встречается квадратура и оппозиция Марса к Сатурну, в то время как соединение этих планет встречалось достаточно редко. Если учесть, что все браки из данной выборки заканчиваются разводами, то самый частый аспект можно трактовать как негативный.
+</p>
+<p><b>Предварительные итоги:</b></p>
+<p>
+Исходя из текущих данных можно сделать некоторые выводы, допустим, в виде рекомендаций для желающих заключить брак жителей Мексики:
+<br>1. По возможности не заключать брак в период квадратуры и оппозиции Марса к Сатурну.
+<br>2. Если в картах рождения супругов доминируют огненные стихии вам следует проявлять особо трепетное отношение друг к другу.
+<br>
 </p>
 <p>
 <b>Обратите внимание:</b>
@@ -418,9 +511,9 @@
 </p>
 <hr>
 Ссылки:
-<br>База данных по бракам и разводам: <a href="https://datos.gob.mx/busca/dataset/registro-civil" target="_blank">https://datos.gob.mx/busca/dataset/registro-civil</a>
+<br>База данных по бракам и разводам: <a href="lnk020.html?rdr=https://datos.gob.mx/busca/dataset/registro-civil" target="_blank">https://datos.gob.mx/busca/dataset/registro-civil</a>
 <p>
-Данные для исследования можно загрузить из репозитария проекта на <a href="https://github.com/alchemist314/astro_research/tree/main/marriages_and_divorces" target='blank'>Github</a>
+Данные для исследования можно загрузить из репозитария проекта на <a href="lnk019.html?rdr=https://github.com/alchemist314/astro_research/tree/main/marriages_and_divorces" target='blank'>Github</a>
 </p>
 <p>
 Страница будет обновляться по мере поступления новой информации.
@@ -428,22 +521,32 @@
 <p>
 Если у вас есть замечания или предложения по дальнейшему ходу исследований, просьба направлять их на почту: magentrum собака gmail точка com.
 </p>
-<br>Update: 19.06.2024
-<script>
-  var aCounter = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
-  for(l=1;l<=aCounter.length; l++) {
-    if (document.getElementById('a_' + l)) {
-      document.getElementById('a_' + l).style.display = 'none';
-    }
-  }
-  function fCounter(val) {
-    if ((aCounter[val] > 0) || (aCounter[val] === undefined)) {
-        aCounter[val] = 0;
-        document.getElementById('a_' + val).style.display = 'block';
-    } else {
-        aCounter[val] = 1;
-        document.getElementById('a_' + val).style.display = 'none';
-    }
-}
+<br>Update: 07.07.2024
 
-</script>
+
+</div>
+<br><br><br>
+<br><br><br>
+<!--
+	</td>
+      </tr>
+    </table>
+!-->
+    <script>
+      var aCounter = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+      for(l=1;l<=aCounter.length; l++) {
+        if (document.getElementById('a_' + l)) {
+          document.getElementById('a_' + l).style.display = 'none';
+        }
+      }
+      function fCounter(val) {
+        if ((aCounter[val] > 0) || (aCounter[val] === undefined)) {
+            aCounter[val] = 0;
+            document.getElementById('a_' + val).style.display = 'block';
+        } else {
+            aCounter[val] = 1;
+            document.getElementById('a_' + val).style.display = 'none';
+        }
+    }
+
+    </script>
