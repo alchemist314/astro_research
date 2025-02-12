@@ -82,6 +82,19 @@ calc = stats.norm(loc=60, scale=5)
 print(calc.pdf(83))
 </pre>
 </div>
+<br>Вычисление среднего значения и стандартного отклонения можно так же упростить с помощью скрипта:
+<div style="padding:10px; background-color:#f8f8f8;">
+<pre style="white-space: pre-wrap;">
+<font color='#A40000'># Подключаем библиотеку NumPy</font>
+import numpy as np
+<font color='#A40000'># Массив с данными</font>
+data=[57,56,57,59,62,58,59,73]
+<font color='#A40000'># Рассчитываем среднее (мат. ожидание)</font>
+print(np.mean(data))
+<font color='#A40000'># Рассчитываем стандартное отклонение (сигма)</font>
+print(np.std(data))
+</pre>
+</div>
 
 <br>Для более равномерного распределения случайных дат рождений использовался подсчет количества аспектов "Квадратура Марс-Плутон" не в 8 случайных выборках по 600 дат, а в 1000:
 <center><img src="img/gauss_square_mars_pluton.png"></center>
